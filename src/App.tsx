@@ -35,7 +35,7 @@ function App() {
           network: "testnet",
           uxMode: "popup", 
           whiteLabel: {
-            name: "Your app Name",
+            name: "Web3 Auth Test App",
             logoLight: "https://web3auth.io/images/w3a-L-Favicon-1.svg",
             logoDark: "https://web3auth.io/images/w3a-D-Favicon-1.svg",
             defaultLanguage: "en",
