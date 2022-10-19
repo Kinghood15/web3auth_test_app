@@ -52,7 +52,7 @@ function App() {
             },
             // Facebook login
             facebook: {
-              name: "Custom Auth Login",
+              name: "any name",
               verifier: "web3auth_fb_test", // Please create a verifier on the developer dashboard and pass the name here
               typeOfLogin: "facebook", // Pass on the login provider of the verifier you've created
               clientId: "499719102170791", // Pass on the clientId of the login provider here - Please note this differs from the Web3Auth ClientID. This is the JWT Client ID
@@ -222,12 +222,6 @@ function App() {
       </h1>
 
       <div className="grid">{provider ? loggedInView : unloggedInView}</div>
-
-      <footer className="footer">
-        <a href="https://github.com/Web3Auth/Web3Auth/tree/master/examples/react-app" target="_blank" rel="noopener noreferrer">
-          Source code
-        </a>
-      </footer>
     </div>
   );
 }
