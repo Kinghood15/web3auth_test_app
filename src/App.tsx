@@ -46,16 +46,16 @@ function App() {
             // Google login
             google: {
               name: "Custom Auth Login",
-              verifier: "YOUR_GOOGLE_VERIFIER_NAME", // Please create a verifier on the developer dashboard and pass the name here
+              verifier: "web3auth_test", // Please create a verifier on the developer dashboard and pass the name here
               typeOfLogin: "google", // Pass on the login provider of the verifier you've created
               clientId: "674150157518-3s0nugb3at3jb3ctvujhe88m90oeskjg.apps.googleusercontent.com", // Pass on the clientId of the login provider here - Please note this differs from the Web3Auth ClientID. This is the JWT Client ID
             },
             // Facebook login
             facebook: {
               name: "Custom Auth Login",
-              verifier: "YOUR_FACEBOOK_VERIFIER_NAME", // Please create a verifier on the developer dashboard and pass the name here
+              verifier: "web3auth_fb_test", // Please create a verifier on the developer dashboard and pass the name here
               typeOfLogin: "facebook", // Pass on the login provider of the verifier you've created
-              clientId: "FACEBOOK_CLIENT_ID_1234567890", // Pass on the clientId of the login provider here - Please note this differs from the Web3Auth ClientID. This is the JWT Client ID
+              clientId: "499719102170791", // Pass on the clientId of the login provider here - Please note this differs from the Web3Auth ClientID. This is the JWT Client ID
             },
             // Add other login providers here
           },
@@ -88,7 +88,7 @@ function App() {
     init();
   }, []);
 
-  const   login = async () => {
+  const login = async () => {
     if (!web3auth) {
       console.log("web3auth not initialized yet");
       return;
